@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<!-- TODO: Add favicon-->
     <title>REEN.</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
@@ -16,8 +17,9 @@
         <div class="contacts-nav flex-space-between">
             <div class="container flex-space-between">
                 <ul class="contacts-list">
-                    <li><a href=""><address>info@reen.com</address></a></li>
-                    <li><a href=""><address>+00 (123) 456 78 90</address></a></li>
+<!--                    TODO: Make clickable link with necessary type-->
+                    <li><a href="" class="email">info@reen.com</a></li>
+                    <li><a href="" class="tel">+00 (123) 456 78 90</a></li>
                 </ul>
 
                 <ul class="social-icons d-flex">
@@ -30,7 +32,7 @@
                 </ul>
             </div>
         </div>
-        <div class="logo-header">
+        <div class="main-nav-container">
             <div class="container flex-space-between">
                 <a href="#" rel="home">REEN.</a>
                 <nav class="d-flex flex-align-center">
@@ -45,7 +47,9 @@
                     </ul>
                 </nav>
                 <input type="search"/>
-                <span class="material-icons d-flex flex-align-center">search</span>
+                <button type="button">
+                    <span class="material-icons d-flex flex-align-center">search</span>
+                </button>
             </div>
         </div>
     </header>
@@ -53,130 +57,195 @@
     <main>
         <section class="hero">
             <div class="container flex-column flex-align-center flex-justify-content-center">
-            <h1>Made for designers</h1>
-            <p>Some text here</p>
-            <button type="button">Get started now</button>
+                <h1>Made for designers</h1>
+                <p>
+                    Create your online portfolio in minutes with the professionally and lovingly designed REEN website template.
+                    Customize your site with versatile and easy to use features.
+                </p>
+                <button type="button" class="btn get-started-btn">Get started now</button>
             </div>
         </section>
 
         <section class="who-we-are">
-            <h2>Beautiful. Clean. Responsive.</h2>
-            <p>REEN is a high-quality solution for those who want a beautiful website in no time.
-                It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,
-                it doesn't matter. Your content will always looks its absolute best.
-            </p>
-            <div>
-                <article>
-                    <h3>Passion</h3>
-                    <img src="…" alt="heart">
-                    <p>Text</p>
-                </article>
-                <article>
-                    <h3>Creativity</h3>
-                    <img src="…" alt="blob">
-                    <p>Text</p>
-                </article>
-                <article>
-                    <h3>Quality</h3>
-                    <img src="…" alt="star">
-                    <p>Text</p>
-                </article>
+            <div class="container flex-column flex-align-center flex-justify-content-center">
+                <header>
+                    <h2>Beautiful. Clean. Responsive.</h2>
+                    <p>REEN is a high-quality solution for those who want a beautiful website in no time.
+                        It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,
+                        it doesn't matter. Your content will always looks its absolute best.
+                    </p>
+                </header>
+                <ul>
+                    <li class="passion">
+                        <h3>Passion</h3>
+                        <p>Text</p>
+                    </li>
+                    <li>
+                        <h3>Creativity</h3>
+                        <p>Text</p>
+                    </li>
+                    <li>
+                        <h3>Quality</h3>
+                        <p>Text</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="latest-works">
-            <h2>Check out our latest works</h2>
-            <p>Some text</p>
-            <div>
-                <div>
-                    <figure>
-                        <figcaption></figcaption>
-                    </figure>
-                    <figure>
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
+            <div class="container flex-column flex-align-center flex-justify-content-center">
+                <header>
+                    <h2>Check out our latest works</h2>
+                    <p>Some text</p>
+                </header>
+                <div class="works-images-container">
+                    <div class="d-flex works-large">
+                        <figure>
+                            <img src="./assets/images/latest-works/motel.png" alt="...">
+                            <figcaption>
+                                <h3>Grand Motel gets an identity brushup</h3>
+                                <small>Identity</small>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/latest-works/fresh.png" alt="...">
+                            <figcaption>
+                                <h3></h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <ul class="d-flex flex-space-between">
+                        <li>
+                            <figure>
+                                <img src="./assets/images/latest-works/works-1.png" alt="...">
+                                <!--                        TODO: Visible only on hover-->
+                                <figcaption>
+                                    <h3></h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/images/latest-works/works-2.png" alt="...">
+                                <!--                        TODO: Visible only on hover-->
+                                <figcaption>
+                                    <h3></h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/images/latest-works/works-3.png" alt="...">
+                                <!--                        TODO: Visible only on hover-->
+                                <figcaption>
+                                    <h3></h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./assets/images/latest-works/works-4.png" alt="...">
+                                <!--                        TODO: Visible only on hover-->
+                                <figcaption>
+                                    <h3></h3>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section class="get-in-touch">
-            <h2>Want work with us?</h2>
-            <p>Some text</p>
-            <button type="button">Get in touch</button>
+            <div class="container flex-column flex-align-center flex-justify-content-center">
+            <header class="container flex-column flex-align-center flex-justify-content-center">
+                <h2>Want work with us?</h2>
+                <p>
+                    Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+                    Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
+                </p>
+            </header>
+            <button type="button" class="btn get-in-touch-btn">Get in touch</button>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section>
-            <div>
+        <ul class="container flex-row flex-space-between footer">
+            <li class="who-we-are-footer">
                 <h4>Who we are</h4>
                 <a href="#" rel="home">REEN.</a>
                 <p>Some text</p>
+<!--                TODO: Don't forget to add arrow (after)-->
                 <a href="">More about us</a>
-            </div>
-            <div>
+            </li>
+            <li class="latest-works-footer">
                 <h4>Latest works</h4>
-                <div>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                    <picture>
-                        <img src="img_bla_bla_bla.jpg" alt="some desc" style="width:auto;">
-                    </picture>
-                </div>
-            </div>
-            <div>
+                <ul>
+                    <li>
+                        <img src="./assets/images/latest-works/small/motel-small.png" alt="..."/>
+<!--                        TODO: stretch whole width & height-->
+                        <button class="cross-btn">
+                            <span>icon</span>
+                        </button>
+                    </li>
+                    <li>
+                        <img src="./assets/images/latest-works/small/tablet-small.png" alt="..."/>
+                        <button class="cross-btn">
+                            <span>icon</span>
+                        </button>
+                    </li>
+                    <li>
+                        <img src="./assets/images/latest-works/small/work-2-small.png" alt="..."/>
+                        <button class="cross-btn">
+                            <span>icon</span>
+                        </button>
+                    </li>
+                    <li>
+                        <img src="./assets/images/latest-works/small/tel-small.png" alt="..."/>
+                        <button class="cross-btn">
+                            <span>icon</span>
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <h4>Get in touch</h4>
                 <p>Some text</p>
                 <ul>
-                    <li><a><span>icon</span><address>address</address></a></li>
-                    <li><a><span>icon</span><address>tel</address></a></li>
-                    <li><a><span>icon</span><address>email</address></a></li>
+<!--                    TODO: icon add before & how to make links clickable for phones, emails-->
+                    <li><a><span>icon</span>address</a></li>
+                    <li><a><span>icon</span>tel</a></li>
+                    <li><a><span>icon</span>email</a></li>
                 </ul>
-            </div>
-            <div>
+            </li>
+            <li>
                 <h4>Free updates</h4>
                 <p></p>
                 <form method="post" action="…">
                     <input type="email" placeholder="" />
                     <button type="submit">subscribe</button>
                 </form>
-            </div>
-        </section>
-        <div class="d-flex flex-space-between">
-            <small>&copy; 2014 REEN. All rights reserved.</small>
+            </li>
+        </ul>
+        <div class="d-flex copyright-container">
+
+            <div class="container flex-space-between">
+<!--            TODO: How to shield special characters -->
+            <small class="copyright">&#64; 2014 REEN. All rights reserved.</small>
 
             <nav>
                 <ul>
-                    <li><a href=""><small>Home</small></a></li>
-                    <li><a href=""><small>Portfolio</small></a></li>
-                    <li><a href=""><small>Blog</small></a></li>
-                    <li><a href=""><small>About</small></a></li>
-                    <li><a href=""><small>Services</small></a></li>
-                    <li><a href=""><small>Contact</small></a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#top">icon top</a>
+            </div>
+            <a href="#top" class="icon-top">icon top</a>
         </div>
     </footer>
 </body>
