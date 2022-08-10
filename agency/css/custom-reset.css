@@ -11,3 +11,8 @@ a {
 figure {
     margin: 0;
 }
+
+.btn-transparent {
+    background: transparent;
+    border: none;
+}

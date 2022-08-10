@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!-- TODO: Add favicon-->
     <title>REEN.</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/custom-reset.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
@@ -18,23 +19,25 @@
             <div class="container flex-space-between">
                 <ul class="contacts-list">
 <!--                    TODO: Make clickable link with necessary type-->
-                    <li><a href="" class="email">info@reen.com</a></li>
-                    <li><a href="" class="tel">+00 (123) 456 78 90</a></li>
+                    <li><a href="mailto:info@reen.com" class="email">info@reen.com</a></li>
+                    <li><a href="tel:001234567890" class="tel">+00 (123) 456 78 90</a></li>
                 </ul>
 
                 <ul class="social-icons d-flex">
-                        <li><a href="">f</a></li>
-                        <li><a href="">f</a></li>
-                        <li><a href="">f</a></li>
-                        <li><a href="">f</a></li>
-                        <li><a href="">f</a></li>
-                        <li><a href="">f</a></li>
+                        <li><a href="" class="icon-facebook"></a></li>
+                        <li><a href="" class="icon-gplus"></a></li>
+                        <li><a href="" class="icon-twitter"></a></li>
+                        <li><a href="" class="icon-pinterest"></a></li>
+                        <li><a href="" class="icon-behance"></a></li>
+                        <li><a href="" class="icon-dribble"></a></li>
                 </ul>
             </div>
         </div>
         <div class="main-nav-container">
             <div class="container flex-space-between">
-                <a href="#" rel="home">REEN.</a>
+                <a href="#" rel="home">
+                    <img class="logo" src="assets/logo.png">
+                </a>
                 <nav class="d-flex flex-align-center">
                     <ul class="site-nav">
                         <li><a href="">Home</a></li>
@@ -46,8 +49,8 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-                <input type="search"/>
-                <button type="button">
+                <input type="search" class="search"/>
+                <button type="button" id="search-btn" class="btn-transparent">
                     <span class="material-icons d-flex flex-align-center">search</span>
                 </button>
             </div>
@@ -59,7 +62,7 @@
             <div class="container flex-column flex-align-center flex-justify-content-center">
                 <h1>Made for designers</h1>
                 <p>
-                    Create your online portfolio in minutes with the professionally and lovingly designed REEN website template.
+                    Create your online portfolio in minutes with the professionally and lovingly designed REEN <br> website template.
                     Customize your site with versatile and easy to use features.
                 </p>
                 <button type="button" class="btn get-started-btn">Get started now</button>
@@ -71,22 +74,33 @@
                 <header>
                     <h2>Beautiful. Clean. Responsive.</h2>
                     <p>REEN is a high-quality solution for those who want a beautiful website in no time.
+                        <br>
                         It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,
+                        <br>
                         it doesn't matter. Your content will always looks its absolute best.
                     </p>
                 </header>
                 <ul>
                     <li class="passion">
                         <h3>Passion</h3>
-                        <p>Text</p>
+                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor.
+                            Laceaque quiae re porem aut labor. Laceaque quiae sitiorem rest non restibusaes
+                            maio es dem tumquam core posae volor remped modis volor.
+                        </p>
                     </li>
-                    <li>
+                    <li class="creativity">
                         <h3>Creativity</h3>
-                        <p>Text</p>
+                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor.
+                            Laceaque quiae re porem aut labor. Laceaque quiae sitiorem rest non restibusaes
+                            maio es dem tumquam core posae volor remped modis volor.
+                        </p>
                     </li>
-                    <li>
+                    <li class="quality">
                         <h3>Quality</h3>
-                        <p>Text</p>
+                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor.
+                            Laceaque quiae re porem aut labor. Laceaque quiae sitiorem rest non restibusaes
+                            maio es dem tumquam core posae volor remped modis volor.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -96,12 +110,17 @@
             <div class="container flex-column flex-align-center flex-justify-content-center">
                 <header>
                     <h2>Check out our latest works</h2>
-                    <p>Some text</p>
+                    <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
                 </header>
                 <div class="works-images-container">
                     <div class="d-flex works-large">
                         <figure>
-                            <img src="./assets/images/latest-works/motel.png" alt="...">
+                            <div class="img-container">
+                                <img src="./assets/images/latest-works/motel.png" alt="...">
+                                <div class="img-overlay">
+                                </div>
+                                <i class="fas fa-plus"></i>
+                            </div>
                             <figcaption>
                                 <h3>Grand Motel gets an identity brushup</h3>
                                 <small>Identity</small>
@@ -161,7 +180,7 @@
             <header class="container flex-column flex-align-center flex-justify-content-center">
                 <h2>Want work with us?</h2>
                 <p>
-                    Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
+                    Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. <br>
                     Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
                 </p>
             </header>
@@ -174,8 +193,10 @@
         <ul class="container flex-row flex-space-between footer">
             <li class="who-we-are-footer">
                 <h4>Who we are</h4>
-                <a href="#" rel="home">REEN.</a>
-                <p>Some text</p>
+                <a href="#" rel="home"><img class="logo" src="assets/logo.png"></a>
+                <p>
+                    Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.
+                </p>
 <!--                TODO: Don't forget to add arrow (after)-->
                 <a href="">More about us</a>
             </li>
@@ -209,9 +230,11 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li class="get-in-touch-footer">
                 <h4>Get in touch</h4>
-                <p>Some text</p>
+                <p>
+                    Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.
+                </p>
                 <ul>
 <!--                    TODO: icon add before & how to make links clickable for phones, emails-->
                     <li><a><span>icon</span>address</a></li>
